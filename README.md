@@ -195,26 +195,27 @@ bin/warehouse input.txt
 
 ---
 
-# Project Structure
+## Project Structure
+```
 src/
-Action.cpp
-Customer.cpp
-Order.cpp
-Volunteer.cpp
-Warehouse.cpp
-Parse.cpp
+    Action.cpp
+    Customer.cpp
+    Order.cpp
+    Volunteer.cpp
+    Warehouse.cpp
+    Parse.cpp
 
 include/
-Action.h
-Customer.h
-Order.h
-Volunteer.h
-Warehouse.h
+    Action.h
+    Customer.h
+    Order.h
+    Volunteer.h
+    Warehouse.h
 
 bin/
 
 makefile
-
+```
 ---
 
 # Memory Management
