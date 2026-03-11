@@ -218,21 +218,15 @@ makefile
 ```
 ---
 
-# Memory Management
+## Technologies
 
-Dynamic memory is carefully managed across the system.
-
-The project implements the **Rule of Five** where required to ensure:
-
-- correct resource ownership
-- safe copying and moving
-- no memory leaks
-
-The system was tested using **Valgrind**.
-
-Expected result:
-All heap blocks were freed -- no leaks are possible
-
+- C++
+- Object-Oriented Programming (OOP)
+- Memory Management
+- Rule of Five
+- Makefile
+- Linux / Unix development environment
+- Valgrind (memory leak detection)
 
 
 
