@@ -44,15 +44,15 @@ The system follows an **Object-Oriented architecture** where the `Warehouse` act
      +---------------+          +---------------+
  
 The system is designed using **inheritance and polymorphism**:
-
+```
 Volunteer (abstract)
 │
 ├── Collector
-│ └── LimitedCollector
+│     └── LimitedCollector
 │
 └── Driver
-└── LimitedDriver
-
+      └── LimitedDriver
+```
 ---
 
 # Core Components
