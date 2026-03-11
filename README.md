@@ -27,21 +27,22 @@ The program progresses in **discrete simulation steps**, updating volunteers and
 
 The system follows an **Object-Oriented architecture** where the `Warehouse` acts as the central controller:
 
-                +----------------+
-                |   Warehouse    |
-                +----------------+
-                 /      |      \
-                /       |       \
-               /        |        \
-     +-----------+  +-----------+  +-----------+
-     | Customers |  | Volunteers|  |  Orders   |
-     +-----------+  +-----------+  +-----------+
-                         |
-             +---------------------------+
-             |                           |
-     +---------------+          +---------------+
-     |   Collectors  |          |    Drivers    |
-     +---------------+          +---------------+
+```
+                     +----------------+
+                     |    Warehouse   |
+                     +----------------+
+                    /        |        \
+                   /         |         \
+          +-----------+  +-----------+  +-----------+
+          | Customers |  | Volunteers|  |  Orders   |
+          +-----------+  +-----------+  +-----------+
+                |               |
+        -----------------   -----------------
+        |               |   |               |
++---------------+ +---------------+ +---------------+ +---------------+
+| CivilianCust. | | SoldierCust.  | |   Collectors  | |    Drivers    |
++---------------+ +---------------+ +---------------+ +---------------+
+```
  
 The system is designed using **inheritance and polymorphism**:
 ```
